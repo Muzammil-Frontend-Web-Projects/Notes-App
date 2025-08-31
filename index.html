@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/9d33740bbe.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1 id="name">Notes App</h1>
+      <!-- Icons -->
+      <div id="modeIcons">
+        <i class="fa-solid fa-sun" title="Light mode"></i>
+        <i class="fa-solid fa-moon" title="Dark mode"></i>
+      </div>
+    </header>
+    <!-- main -->
+     <main>
+      <!-- Container -->
+      <div id="container">
+        <!-- form -->
+        <form action="" >
+          <input type="text" name="" id="titleInput" placeholder="Add Title">
+          <textarea  name="" id="content" placeholder="Add content"></textarea>
+          <button id="btn" type="submit">Add Note</button>
+        </form>
+        <!-- show full content area -->
+        <div class="showContent" id="showContentArea">
+          <p id="title"></p>
+          <p id="text"></p>
+          <!-- back button -->
+          <button id="backToCards">Back</button>
+        </div>
+        <!-- card container -->
+        <div id="cardContainer" >
+        
+      </div>
+      </div>
+     </main>
+  </body>
+</html>

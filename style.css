@@ -1,0 +1,232 @@
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Inter font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Some settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* header */
+header {
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#name {
+  flex: 1;
+  text-align: center;
+}
+/* Icons */
+#modeIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 1rem;
+  margin-right: 1.5rem;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+}
+.fa-sun,
+.fa-moon {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.fa-sun:active,
+.fa-moon:active {
+  transform: scale(0.7);
+  transition: 0.2s ease-in-out;
+}
+/* main */
+#container {
+  height: calc(100vh - 5.8rem);
+}
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#titleInput {
+  width: 50rem;
+  height: 4rem;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#content {
+  width: 50rem;
+  height: 15rem;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  resize: none;
+}
+#titleInput:focus {
+  background-color: #4caf50;
+  outline: none;
+}
+#content:focus {
+  background-color: #4caf50;
+  outline: none;
+}
+#btn {
+  width: 50rem;
+  height: 3rem;
+  background: #4caf50;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+#btn:hover {
+  background: #388e3c;
+}
+#btn:active {
+  cursor: progress;
+}
+#cardTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+/* Card container */
+#cardContainer {
+  margin-top: 2rem;
+  padding: 0 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  place-items: center;
+  gap: 1.5rem;
+}
+.card {
+  width: 33rem;
+  height: 15rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1.2rem;
+
+  padding: 1.5rem;
+  position: relative;
+}
+#cardBtns {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.seeAll {
+  padding: 0.5rem 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* show full content area */
+.showContent {
+  display: none;
+}
+#showContentArea {
+  background: white;
+}
+#title {
+  padding: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+#text {
+  text-align: justify;
+  font-size: 1.8rem;
+  padding: 0 2rem 2rem 2rem;
+}
+/* Back to card buttons */
+#cardBtns button,
+#backToCards {
+  padding: 0.1rem 1rem;
+  background: #f44336;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+}
+#backToCards {
+  position: relative;
+  bottom: 1rem;
+  left: 2rem;
+}
+#cardBtns button,
+#backToCards:hover {
+  background: #c62828;
+}
+#cardBtns button:active {
+  cursor: progress;
+}
+.card:hover #cardBtns {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+/* For dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+body.dark-mode #titleInput,
+body.dark-mode #content {
+  background-color: black;
+  color: white;
+  border: 1px solid #222;
+}
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+}
+body.dark-mode #modeIcons {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+body.dark-mode #showContentArea {
+  background-color: black;
+  color: white;
+}
+/* Media Queries */
+@media (max-width: 515px) {
+  #titleInput,
+  #content,
+  #btn {
+    width: 90%;
+  }
+  #modeIcons {
+    width: 6rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 370px) {
+  .card {
+    width: 90%;
+  }
+}
