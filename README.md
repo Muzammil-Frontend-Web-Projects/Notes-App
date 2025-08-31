@@ -64,7 +64,7 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 | Home Page                       | Add Note                      | Dark Mode                       |
 | ------------------------------- | ----------------------------- | ------------------------------- |
-| ![Home](./screenshots/light mode.png) | ![Add](./screenshots/dark mode.png) | ![Dark](./screenshots/show all text.png) |
+| ![Home]("./screenshots/light mode.png") | ![Add]("./screenshots/dark mode.png") | ![Dark]("./screenshots/show all text.png") |
 
 ---
 
