@@ -172,13 +172,15 @@ faSun.addEventListener("click", () => {
 });
 
 window.onload = function(){
-  mode = JSON.parse(localStorage.getItem("lightMode")) || "";
+  lightMode = JSON.parse(localStorage.getItem("lightMode")) || "";
   if(lightMode){
       body.classList.add("dark-mode");
+      lightMode = false;
   }
   else{
      body.classList.remove("dark-mode");
+     lightMode = true;
   }
-  console.log(mode);
+  console.log(lightMode);
   
 }
