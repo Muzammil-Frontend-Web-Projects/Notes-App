@@ -170,17 +170,18 @@ faSun.addEventListener("click", () => {
   lightMode = true;
   localStorage.setItem("lightMode",JSON.stringify(lightMode));
 });
-
+// on window loading mode color remain
 window.onload = function(){
   lightMode = JSON.parse(localStorage.getItem("lightMode")) || "";
   if(lightMode){
       body.classList.add("dark-mode");
       lightMode = false;
+      localStorage.setItem("lightMode",JSON.stringify(lightMode));
   }
   else{
      body.classList.remove("dark-mode");
      lightMode = true;
+     localStorage.setItem("lightMode",JSON.stringify(lightMode));
   }
-  console.log(lightMode);
   
 }
