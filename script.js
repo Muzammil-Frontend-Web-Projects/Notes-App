@@ -141,8 +141,9 @@ faSun = document.querySelector(".fa-sun");
 faMoon = document.querySelector(".fa-moon");
 const body = document.querySelector("body");
 let lightMode = true;
+let darkMode = false;
 faMoon.addEventListener("click", () => {
-  if (!lightMode) {
+  if (!lightMode && darkMode) {
     Toastify({
       text: "Already in dark mode.",
       duration: 1000,
@@ -153,11 +154,13 @@ faMoon.addEventListener("click", () => {
   }
   body.classList.add("dark-mode");
   lightMode = false;
+  darkMode = true;
   localStorage.setItem("lightMode",JSON.stringify(lightMode));
+  localStorage.setItem("darkMode",JSON.stringify(darkMode));
 });
 
 faSun.addEventListener("click", () => {
-  if(lightMode){
+  if(lightMode && !darkMode){
   Toastify({
     text: "Already in light mode.",
     duration: 1000,
@@ -168,20 +171,20 @@ faSun.addEventListener("click", () => {
 }
   body.classList.remove("dark-mode");
   lightMode = true;
+  darkMode = false;
   localStorage.setItem("lightMode",JSON.stringify(lightMode));
+  localStorage.setItem("darkMode",JSON.stringify(darkMode));
 });
 // on window loading mode color remain
 window.onload = function(){
   lightMode = JSON.parse(localStorage.getItem("lightMode")) || "";
-  if(lightMode){
+  darkMode = JSON.parse(localStorage.getItem("darkMode")) || "";
+
+  if(!lightMode && darkMode){
       body.classList.add("dark-mode");
-      lightMode = false;
-      localStorage.setItem("lightMode",JSON.stringify(lightMode));
   }
-  else{
+  else if(lightMode && !darkMode){
      body.classList.remove("dark-mode");
-     lightMode = true;
-     localStorage.setItem("lightMode",JSON.stringify(lightMode));
   }
-  
+  else{}
 }
