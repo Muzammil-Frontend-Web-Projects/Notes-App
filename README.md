@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/muzammil-frontend-web-projects/Notes-App/main/screenshots/banner.png" alt="Notes App Banner" width="600"/>
-</p>
+![Notes App Banner](./screenshots/banner.png)
 
 # 📝 Notes App
 
