@@ -16,7 +16,7 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 ---
 
-## 📑 Table of Contents
+### 📑 Table of Contents
 
 * [Tech Stack](#-tech-stack)
 * [How to Use](#-how-to-use)
@@ -30,7 +30,7 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 ---
 
-## 🚀 Tech Stack
+### 🚀 Tech Stack
 
 ![HTML5](https://img.shields.io/badge/HTML5-orange?style=for-the-badge\&logo=html5)
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge\&logo=css3)
@@ -38,7 +38,7 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 ---
 
-## 📂 How to Use
+### 📂 How to Use
 
 1. Clone the repo
 
@@ -54,13 +54,13 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 ---
 
-## 🌐 Live Demo
+### 🌐 Live Demo
 
 [Click here to try it out](https://muzammil-frontend-web-projects.github.io/Notes-App/)
 
 ---
 
-## 📸 Screenshots
+### 📸 Screenshots
 
 | Home Page                       | Add Note                      | Dark Mode                       |
 | ------------------------------- | ----------------------------- | ------------------------------- |
@@ -68,7 +68,7 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 ---
 
-## ✨ Features
+### ✨ Features
 
 * ➕ Add new notes with title and content.
 * ✏️ Edit existing notes.
@@ -83,7 +83,7 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 ---
 
-## 🛣️ Roadmap
+### 🛣️ Roadmap
 
 * [ ] Add search functionality for notes.
 * [ ] Add note categories or tags.
@@ -91,20 +91,20 @@ A simple web app to **create, edit, and delete notes** with **Dark/Light mode** 
 
 ---
 
-## 🤝 Contributing
+### 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repository and submit pull requests.
 
 ---
 
-## 📜 License
+### 📜 License
 
 This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-## 📬 Contact
+### 📬 Contact
 
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail\&logoColor=white)](mailto:cornerofcodes00@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/muhammad-muzammil-irshad-05b863333)
